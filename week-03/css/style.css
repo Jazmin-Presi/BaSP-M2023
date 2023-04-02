@@ -1,5 +1,5 @@
 body{
-    background-color:#ECE9F1;
+    background-color: #ECE9F1;
     font-family: 'Roboto', sans-serif;
 }
 .upp-title{
@@ -14,10 +14,64 @@ body{
 ul{
     list-style: none;
 }
-ul a{
+a{
     text-decoration: none;
+    color: #fff
+}
+a:hover{
+    color: #AACE9B
 }
 
-li p{
-    display: inline-block;
+header{
+    text-align: center;
+    width: 1512px;
+    height: 217px;
 }
+
+#mega-title{
+    width: 100%;
+}
+
+#philosophy{
+    background-image: url(../../assets/img/blue-gym-banner.png);
+    background-position: center top;
+    background-size: auto;
+    background-repeat: no-repeat;
+    width: 1244px;
+    height: 624px;
+    }
+
+    aside{
+        position: fixed;
+        display: inline-block;
+        background-color: #373867;
+        width: 271px;
+        height: 100%;
+        text-align: center;
+        }
+
+        main{
+            margin-left: 271px;
+        }
+        footer{
+            margin-left: 271px;
+        }
+
+        .activities{
+            display: inline-block;
+            width: 38%;
+        }
+        
+        #act1{
+            background-image: url(../../assets/img/crossfit.png);
+            background-position: center top;
+            background-size: auto;
+            background-repeat: no-repeat;
+            width: 481px;
+            height: 491px;
+            text-align: center;
+        }
+
+        #act1 h3{
+            margin-top: 100px;
+        }
