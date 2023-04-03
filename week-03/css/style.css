@@ -21,57 +21,148 @@ a{
 a:hover{
     color: #AACE9B
 }
-
+main{
+    margin-left: 271px;
+}
+footer{
+    margin-left: 271px;
+}
 header{
-    text-align: center;
-    width: 1512px;
-    height: 217px;
-}
-
-#mega-title{
     width: 100%;
+    height: 217px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
 }
-
-#philosophy{
+h1{
+    padding-top: 69px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+}
+header img{
+    position: fixed;
+    left: 85px;
+    top: 48px;
+}
+aside{
+    float: left;
+    background-color: #373867;
+    width: 271px;
+    height: 6000px;
+    text-align: center;
+}
+nav{
+    position: fixed;
+    left: 22px;
+    margin-top: 80px;
+}
+#nav-text li:nth-child(1),
+#nav-text li:nth-child(2),
+#nav-text li:nth-child(3),
+#nav-text li:nth-child(4){
+    margin-top: 50px;
+    font-weight: 800;
+    font-size: 23.1293px;
+    line-height: 27px;
+}
+#nav-text li:nth-child(4){
+    margin-top: 127px;
+    margin-bottom: 8px;
+}
+#nav-text li:nth-child(5),
+#nav-text li:nth-child(6),
+#nav-text li:nth-child(7),
+#nav-text li:nth-child(8),
+#nav-text li:nth-child(9){
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+}
+#philosophy-img{
     background-image: url(../../assets/img/blue-gym-banner.png);
     background-position: center top;
     background-size: auto;
     background-repeat: no-repeat;
     width: 1244px;
     height: 624px;
-    }
-
-    aside{
-        position: fixed;
-        display: inline-block;
-        background-color: #373867;
-        width: 271px;
-        height: 100%;
-        text-align: center;
-        }
-
-        main{
-            margin-left: 271px;
-        }
-        footer{
-            margin-left: 271px;
-        }
-
-        .activities{
-            display: inline-block;
-            width: 38%;
-        }
-        
-        #act1{
-            background-image: url(../../assets/img/crossfit.png);
-            background-position: center top;
-            background-size: auto;
-            background-repeat: no-repeat;
-            width: 481px;
-            height: 491px;
-            text-align: center;
-        }
-
-        #act1 h3{
-            margin-top: 100px;
-        }
+    text-align: center;
+}
+#philosophy-text h2{
+    padding-top: 178px;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 70px;
+}
+#philosophy-text p{
+    display: inline-block;
+    padding: 64px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    width: 597px;
+}
+#why-mega{
+    width: 591px;
+    margin-top: 122px;
+    margin-left: 46px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+    text-align: left;
+    float: left;
+}
+#why-mega h2{
+    margin-bottom: 56px;
+}
+#why-mega img{
+    position: absolute;
+    left: 712px;
+    top: 963px;
+    width: 44px;
+    height: 50px;
+    margin-left: 10px;
+}
+#people-exercising{
+    width: 577px;
+    float: right;
+}
+#join-act-title{
+    display: inline-block;
+    padding: 30px 110px 30px 180px;
+    margin-top: 160px;
+    background-color: #373867;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+}
+.activities{
+    display: inline-block;
+    width: 461px;
+    height: 471px;
+    font-weight: 700;
+    line-height: 47px;
+    text-align: center;
+    background-position: center top;
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+.activities p{
+    display: inline-block;
+}
+#crossfit{
+    background-image: url(../../assets/img/crossfit.png);
+}
+#spinning{
+    background-image: url(../../assets/img/spinning.png);
+}
+#functional{
+    background-image: url(../../assets/img/funcional.png);
+}
+#boxing{
+    background-image: url(../../assets/img/boxi.png);
+}
+#weight-training{
+    background-image: url(../../assets/img/musculacion.png);
+}
