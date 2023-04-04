@@ -155,20 +155,32 @@
                 </div>
             </section>
             <section class="blue-text">
-                <h2 class="upp-title">Got any questions?</h2>
                 <form>
-                    <label for="option1">I would like to make a complaint</label>
-                    <input id="option1" type="radio" name="choice">
-                    <label for="option2">I would like to make a suggestion</label>
-                    <input id="option2" type="radio" name="choice">
-                    <label for="option3">I would like to know more about memberships and prices</label>
-                    <input id="option3" type="radio" name="choice">
-                    <input type="text" placeholder="name">
-                    <input type="text" placeholder="surname">
-                    <input type="email" placeholder="email">
-                    <label for="write">Write your message</label>
+                    <h2 class="upp-title">Got any questions?</h2>
+                    <div>
+                        <input id="option1" type="radio" name="choice">
+                        <label class="form-text" for="option1">I would like to make a complaint</label>
+                        <input id="option2" type="radio" name="choice">
+                        <label class="form-text" for="option2">I would like to make a suggestion</label>
+                    </div>
+                    <div>
+                        <input id="option3" type="radio" name="choice">
+                        <label class="form-text" for="option3">I would like to know more about memberships and prices</label>
+                    </div>
+                    <div>
+                        <input type="text" placeholder="NAME">
+                        <input type="text" placeholder="SURNAME">
+                    </div>
+                    <div>
+                        <input type="email" placeholder="EMAIL">
+                    </div>
+                    <div>
+                        <label class="form-text" for="write">Write your message</label>
+                    </div>
                     <textarea name="text" id="write" cols="30" rows="10"></textarea>
-                    <input type="submit" value="submit">
+                    <div>
+                        <input class="button-form" type="submit" value="submit">
+                    </div>
                 </form>
             </section>
         </main>

@@ -46,7 +46,7 @@ header img{
 aside{
     float: left;
     width: 271px;
-    height: 6000px;
+    height: 7905px;
     background-color: #373867;
     text-align: center;
 }
@@ -61,7 +61,7 @@ nav{
 #nav-text li:nth-child(4){
     margin-top: 50px;
     font-weight: 800;
-    font-size: 23.1293px;
+    font-size: 23px;
     line-height: 27px;
 }
 #nav-text li:nth-child(4){
@@ -289,6 +289,30 @@ article ul{
 }
 .contact{
     background-color: #919194;
+}
+form{
+    width: 665px;
+    height: 694px;
+    margin: 145px 290px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 20px;
+}
+form h2{
+    padding-top: 36px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+}
+.form-message{
+    text-align: left;
+}
+.button-form{
+    border: none;
+    border-radius: 5px;
+    width: 155px;
+    height: 35px;
+    background-color: #AACE9B;
 }
 footer{
     width: 100%;
