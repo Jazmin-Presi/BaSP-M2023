@@ -139,17 +139,15 @@ nav{
 }
 .activities{
     display: inline-block;
-    width: 461px;
+    width: 40%;
     height: 471px;
     font-weight: 700;
     line-height: 47px;
     text-align: center;
+    font-size: 40px;
     background-position: center top;
-    background-size: auto;
+    background-size: cover;
     background-repeat: no-repeat;
-}
-.activities p{
-    display: inline-block;
 }
 #crossfit{
     background-image: url(../../assets/img/crossfit.png);
