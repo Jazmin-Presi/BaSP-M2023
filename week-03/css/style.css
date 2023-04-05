@@ -253,11 +253,20 @@ article ul{
 .function{
     display: inline-block;
     width: 100%;
+    padding-bottom: 100px;
 }
 .function img{
-    float: right;
     width: 326px;
     height: 326px;
+}
+.test-img{
+    float: right;
+    width: 30%;
+    margin-top: 82px;
+}
+.test-text{
+    float: left;
+    width: 70%;
 }
 .function h2,
 .function h3,
@@ -298,16 +307,46 @@ form{
     text-align: center;
     border-radius: 20px;
 }
+.bordered{
+    display: inline-block;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: #373867;
+}
+.form-margin{
+    margin: 27px 0px;
+}
+label{
+    padding: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+}
+.write-label{
+    text-align: left;
+}
+input[type="text"]{
+    padding: 10px;
+    margin: 30px 20px;
+}
+input[type="email"]{
+    padding: 10px;
+    width: 400px;
+}
 form h2{
     padding-top: 36px;
     font-weight: 500;
     font-size: 32px;
     line-height: 38px;
 }
-.form-message{
-    text-align: left;
+textarea{
+    width: 450px;
+    height: 130px;
+    border-style: none;
 }
 .button-form{
+    margin-top: 45px;
     border: none;
     border-radius: 5px;
     width: 155px;
@@ -332,4 +371,3 @@ footer p{
     font-size: 14px;
     line-height: 16px;
 }
-
