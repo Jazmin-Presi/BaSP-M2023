@@ -26,9 +26,18 @@ The following are the main sections included from the landing page:
 - Footer
 
 ## Week 03
-During this week we applied the knowledge of CSS we learned on class. The goal was to copy the aesthetic of the landing page designed on figma. We took the HTML we created and modified it to add styles in CSS and link a stylesheet. We also included a reset.css file to erase previous default styles. 
+During this week we applied the knowledge of CSS we learned on class. The goal was to copy the aesthetic of the landing page designed on figma. We took the HTML we created and modified it to add styles in CSS and link a stylesheet. We also included a reset.css file to erase previous default styles.
 
-## Authors
+## Week 04
+The fourth week was dedicated to optimize the landing page to obtain a responsive design that functions on mobile as well as tablet and desktop. This assignment was based on the concept of mobile first and the main tool utilized during the development process was flexbox.
+
+## Github Pages
+Github pages was enabled to visualiza the online preview.
+```bash
+https://keiler-art.github.io/BaSP-M2023/week-04/index.html
+```
+
+## Author
 
 - [Jazmin Presidente](https://www.github.com/keiler-art)
 
