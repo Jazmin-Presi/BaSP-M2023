@@ -1,14 +1,17 @@
 footer{
+    display: flex;
+    flex-direction: column;
     width: 100%;
     margin-top: 60px;
     background-color: #D9D9D9;
     text-align: center;
 }
 footer div{
+    display: flex;
+    justify-content: space-evenly;
     background-color: #fff;
 }
 footer img{
-    display: inline-block;
     margin: 20px 25px;
     width: 28px;
     height: 28px;

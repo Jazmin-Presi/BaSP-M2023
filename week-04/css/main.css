@@ -1,3 +1,14 @@
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
 aside{
     display: none;
     width: 390px;
@@ -14,7 +25,7 @@ nav{
 }
 #philosophy-img{
     width: 100%;
-    max-width: 390px;
+    min-width: 390px;
     height: 245px;
     background-image: url(../../assets/img/blue-gym-banner.png);
     background-position: center top;
@@ -22,8 +33,15 @@ nav{
     background-repeat: no-repeat;
     text-align: center;
 }
+#philosophy-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
 #philosophy-text h2{
-    padding-top: 70px;
     font-weight: 700;
     font-size: 19.0413px;
     line-height: 22px;
@@ -55,7 +73,7 @@ nav{
 }
 .join-act-title{
     display: inline-block;
-    margin-top: 30px;
+    margin-top: 50px;
     margin-bottom: 30px;
     padding: 15px 57px;
     background-color: #373867;
@@ -63,32 +81,29 @@ nav{
     font-size: 20px;
     line-height: 23px;
 }
+.blue-box{
+    display: flex;
+    align-self: flex-start;
+}
 .activities{
-    position: relative;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 10px;
     width: 100%;
-    max-width: 269px;
+    max-width: 270px;
     height: 270px;
     background-position: center top;
     background-size: cover;
     background-repeat: no-repeat;
-    box-sizing: border-box;
     font-weight: 400;
     font-size: 20px;
     line-height: 23px;
     text-align: center;
 }
-.activities h3{
-    position: absolute;
-    top: 22%;
-    left: 12%;
-    right: 12%;
-}
 .activities p{
-    position: absolute;
-    top: 35%;
-    left: 12%;
+    margin-top: 8%;
 }
 #crossfit{
     background-image: url(../../assets/img/crossfit.png);
@@ -105,9 +120,6 @@ nav{
 #weight-training{
     background-image: url(../../assets/img/musculacion.png);
 }
-#membership-section{
-    margin-bottom: 50px;
-}
 .mega-memb-title{
     display: inline-block;
     margin-top: 30px;
@@ -118,10 +130,18 @@ nav{
     font-size: 20px;
     line-height: 23px;
 }
-article{
-    display: inline-block;
+#membership-section{
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
-    max-width: 390px;
+    margin-bottom: 50px;
+}
+article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    min-width: 390px;
     height: 800px;
     padding-bottom: 40px;
     box-sizing: border-box;
@@ -130,10 +150,6 @@ article{
 article img{
     width: 385px;
     height: 327px;
-}
-article h3,
-article ul{
-    margin: 40px 0px;
 }
 .gray-margin{
     width: 100%;
@@ -144,6 +160,11 @@ article ul{
     color: #AACE9B;
 }
 .membership-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 417px;
     width: 326px;
     margin: auto;
     text-align: center;
@@ -156,7 +177,7 @@ article ul{
     line-height: 36px;
 }
 .membership-info li{
-    margin: 17px 0px 0px 40px;
+    margin: 17px 0px;
     text-align: left;
     font-weight: 400;
     font-size: 16px;
@@ -222,6 +243,9 @@ article ul{
     background-color: #919194;
 }
 form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     width: 313px;
     height: 532px;
     margin-top: 60px;
@@ -229,35 +253,33 @@ form{
     text-align: center;
     border-radius: 20px;
 }
+.form-labels-left{
+    text-align: left;
+}
 .bordered{
     display: inline-block;
+    margin: 10px;
+    padding: 5px;
     border-style: solid;
     border-width: 1px;
     border-radius: 5px;
     border-color: #373867;
 }
-.form-margin{
-    margin: 20px;
-}
 label{
-    padding: 10px;
     font-weight: 500;
     font-size: 8px;
     line-height: 9px;
 }
 input[type="text"]{
+    margin: 8px;
     padding: 10px;
-    margin: 10px;
     width: 100px;
 }
 input[type="email"]{
     padding: 10px;
-    margin-bottom: 10px;
     width: 244px;
 }
 form h2{
-    padding-top: 20px;
-    padding-bottom: 20px;
     font-weight: 500;
     font-size: 20px;
     line-height: 23px;
@@ -268,7 +290,6 @@ textarea{
     border-style: none;
 }
 .button-form{
-    margin-top: 10px;
     border: none;
     border-radius: 5px;
     width: 83px;

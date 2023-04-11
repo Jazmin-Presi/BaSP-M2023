@@ -1,7 +1,7 @@
 header{
     display: flex;
-    justify-content: center;
-    align-items: left;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
     height: 76px;
     font-weight: 700;
@@ -9,13 +9,22 @@ header{
     line-height: 11px;
 }
 h1{
-    padding-top: 23px;
+    margin-top: 10px;
     font-weight: 700;
     font-size: 20px;
     line-height: 23px;
 }
-header img{
-    margin: 6px 47px 6px 26px;
+header p{
+    text-align: right;
+}
+.rocket-logo{
+    margin: 25px;
     width: 57px;
     height: 64px;
     }
+.burguer{
+    margin: 25px;
+    width: 24px;
+    height: 24px;
+
+}

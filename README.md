@@ -32,7 +32,7 @@ During this week we applied the knowledge of CSS we learned on class. The goal w
 The fourth week was dedicated to optimize the landing page to obtain a responsive design that functions on mobile as well as tablet and desktop. This assignment was based on the concept of mobile first and the main tool utilized during the development process was flexbox.
 
 ## Github Pages
-Github pages was enabled to visualiza the online preview.
+Github pages was enabled to visualize the online preview.
 ```bash
 https://keiler-art.github.io/BaSP-M2023/week-04/index.html
 ```
