@@ -55,7 +55,7 @@ nav{
     line-height: 15px;
 }
 #why-mega{
-    width: 310px;
+    display: inline-block;
     margin-top: 30px;
     font-weight: 700;
     font-size: 16px;
@@ -67,9 +67,16 @@ nav{
 }
 #why-mega img{
     display: none;
+    width: 44px;
+    height: 50px;
+}
+#why-mega p{
+    margin: auto;
+    width: 80%;
 }
 #people-exercising{
     display: none;
+    width: 30%;
 }
 .join-act-title{
     display: inline-block;
@@ -296,4 +303,26 @@ textarea{
     width: 83px;
     height: 27px;
     background-color: #AACE9B;
+}
+@media screen and (min-width:600px) {
+    #why-mega-section{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    }
+    #people-exercising{
+        display: inline-block;
+    }
+    #why-mega{
+        width: 60%;
+    }
+}
+@media screen and (min-width:1024px){
+    #why-mega img{
+        display: inline-block;
+    }
+    #why-mega h2{
+        display: inline-block;
+    }
+
 }
