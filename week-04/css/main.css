@@ -282,7 +282,7 @@ form{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 313px;
+    width: 80%;
     height: 532px;
     margin-top: 60px;
     background-color: #fff;
@@ -332,7 +332,10 @@ textarea{
     height: 27px;
     background-color: #AACE9B;
 }
-@media screen and (min-width:600px) {
+@media screen and (min-width:600px){
+    .burguer{
+        display: none;
+    }
     #why-mega-section{
     display: flex;
     align-items: center;
@@ -383,5 +386,7 @@ textarea{
     article{
         width: 20%;
     }
-
+    .form-labels-left{
+        max-width: 50%;
+    }
 }
