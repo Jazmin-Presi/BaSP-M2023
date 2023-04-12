@@ -231,10 +231,22 @@ article img{
     width: 100%;
     padding-bottom: 50px;
 }
+.function-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .function img{
     margin-top: 30px;
     width: 30%;
     height: 30%;
+    min-width: 140px;
+    object-fit: contain;
+}
+.test-text{
+    width: 70%;
+    min-width: 350px;
 }
 .function h2,
 .function h3,
@@ -243,7 +255,6 @@ article img{
 }
 .function h3,
 .function p{
-    width: 250px;
     padding-top: 10px;
     font-weight: 400;
     font-size: 20px;
@@ -353,8 +364,8 @@ textarea{
         margin-left: 3%;
     }
     .activities{
-        width: 360px;
-        height: 370px;
+        width: 410px;
+        height: 420px;
     }
     aside{
         display: block;
@@ -365,4 +376,12 @@ textarea{
         width: 78%;
         margin-left: 22%;
     }
+    .membership-article{
+        display: flex;
+        width: 100%;
+    }
+    article{
+        width: 20%;
+    }
+
 }
