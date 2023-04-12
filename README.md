@@ -34,7 +34,7 @@ The fourth week was dedicated to optimize the landing page to obtain a responsiv
 ## Github Pages
 Github pages was enabled to visualize the online preview.
 ```bash
-https://keiler-art.github.io/BaSP-M2023/week-04/index.html
+https://keiler-art.github.io/BaSP-M2023/week-04/
 ```
 
 ## Author
