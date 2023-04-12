@@ -13,7 +13,7 @@ aside{
     position: fixed;
     top: 76px;
     width: 22%;
-    height: 650px;
+    height: 100%;
     background-color: #373867;
     text-align: center;
 }
@@ -26,7 +26,7 @@ nav{
 #nav-text li:nth-child(4){
     margin-top: 50px;
     font-weight: 800;
-    font-size: 23px;
+    font-size: 1.25em;
     line-height: 27px;
 }
 #nav-text li:nth-child(4){
@@ -39,7 +39,7 @@ nav{
 #nav-text li:nth-child(8),
 #nav-text li:nth-child(9){
     font-weight: 400;
-    font-size: 20px;
+    font-size: 1.25em;
     line-height: 30px;
 }
 #philosophy-img{
@@ -62,7 +62,7 @@ nav{
 }
 #philosophy-text h2{
     font-weight: 700;
-    font-size: 20px;
+    font-size: 1.25em;
     line-height: 22px;
 }
 #philosophy-text p{
@@ -70,14 +70,14 @@ nav{
     width: 320px;
     padding-top: 20px;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 0.75em;
     line-height: 15px;
 }
 #why-mega{
     display: inline-block;
     margin-top: 30px;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 1em;
     line-height: 18px;
     text-align: center;
 }
@@ -104,7 +104,7 @@ nav{
     padding: 15px 57px;
     background-color: #373867;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 1.25em;
     line-height: 23px;
 }
 .blue-box{
@@ -122,7 +122,7 @@ nav{
     background-size: cover;
     background-repeat: no-repeat;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 1.25em;
     line-height: 23px;
     text-align: center;
 }
@@ -151,7 +151,7 @@ nav{
     padding: 15px 24px;
     background-color: #373867;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 1.25em;
     line-height: 23px;
 }
 #membership-section{
@@ -197,14 +197,14 @@ article img{
 .membership-info h3,
 .membership-info button{
     font-weight: 700;
-    font-size: 30px;
+    font-size: 1.8em;
     line-height: 36px;
 }
 .membership-info li{
     margin: 17px 0px;
     text-align: left;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 0.75em;
 }
 .line{
     height: 1px;
@@ -214,7 +214,7 @@ article img{
 .membership-info p{
     margin: 20px 0px;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 0.75em;
     line-height: 13px;
 }
 .membership-info button{
@@ -257,13 +257,13 @@ article img{
 .function p{
     padding-top: 10px;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 1.25em;
     line-height: 23px;
 }
 .function h2{
     margin-top: 10%;
     font-weight: 700;
-    font-size: 52px;
+    font-size: 3.25em;
     line-height: 62px;
 }
 .reservation{
@@ -290,7 +290,8 @@ form{
     border-radius: 20px;
 }
 .form-labels-left{
-    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
 }
 .bordered{
     display: inline-block;
@@ -303,7 +304,7 @@ form{
 }
 label{
     font-weight: 500;
-    font-size: 8px;
+    font-size: 0.5em;
     line-height: 9px;
 }
 input[type="text"]{
@@ -317,7 +318,7 @@ input[type="email"]{
 }
 form h2{
     font-weight: 500;
-    font-size: 20px;
+    font-size: 1.25em;
     line-height: 23px;
 }
 textarea{
@@ -331,6 +332,13 @@ textarea{
     width: 83px;
     height: 27px;
     background-color: #AACE9B;
+}
+.w{
+    display: inline-block;
+    width: 100%;
+}
+.ww{
+    width: 100%;
 }
 @media screen and (min-width:600px){
     .burguer{
@@ -351,6 +359,9 @@ textarea{
         display: flex;
         flex-wrap: wrap;
         margin-left: 3%;
+    }
+    .w{
+        width: 50%;
     }
 }
 @media screen and (min-width:1024px){
@@ -385,8 +396,5 @@ textarea{
     }
     article{
         width: 20%;
-    }
-    .form-labels-left{
-        max-width: 50%;
     }
 }
