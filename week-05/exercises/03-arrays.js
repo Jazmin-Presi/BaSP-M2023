@@ -5,8 +5,8 @@
 
 console.log('-Exercise 3.a:');
 
-var months = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre",
-"Octubre", "Noviembre", "Diciembre"];
+var months = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre',
+'Octubre', 'Noviembre', 'Diciembre'];
 
 console.log(months[4],months[10]);
 
@@ -53,7 +53,7 @@ console.log(months.join('-'));
 
 console.log('-Exercise 3.g:');
 
-var otherMonths = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre",
-"Octubre", "Noviembre", "Diciembre"];
+var otherMonths = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre',
+'Octubre', 'Noviembre', 'Diciembre'];
 
 console.log(otherMonths.slice(4,11));
