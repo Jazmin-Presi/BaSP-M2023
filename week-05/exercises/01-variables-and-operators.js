@@ -15,9 +15,9 @@ console.log(lala2);
 
 console.log('-Exercise 1.b:');
 
-var comida1 = 'salchi';
-var comida2 = 'papas';
-var felicidad = comida1 + comida2;
+var food1 = 'salchi';
+var food2 = 'papas';
+var happyness = food1 + food2;
 
 console.log(felicidad);
 
@@ -27,8 +27,8 @@ guardando el resultado de la suma en una 3er variable (utilizar length)*/
 
 console.log('-Exercise 1.c:');
 
-var mar = 'pulpo';
-var tierra = 'ornitorrinco';
-var animales = mar + tierra;
+var water = 'pulpo';
+var earth = 'ornitorrinco';
+var animals = mar + tierra;
 
 console.log(animales.length);
