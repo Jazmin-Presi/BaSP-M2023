@@ -5,21 +5,21 @@ de la suma de ambos números en una 3er variable*/
 
 console.log('-Exercise 1.a:');
 
-var lala0 = 5;
-var lala1 = 20;
-var lala2 = lala0 + lala1;
+var number1 = 5;
+var number2 = 20;
+var resultSum = number1 + number2;
 
-console.log(lala2);
+console.log(resultSum);
 
 /*b. Crear dos variables de tipo String y concatenarlas guardando el resultado en una 3er variable*/
 
 console.log('-Exercise 1.b:');
 
-var food1 = 'salchi';
-var food2 = 'papas';
-var happyness = food1 + food2;
+var word1 = 'first';
+var word2 = 'second';
+var sentence0 = word1 + word2;
 
-console.log(felicidad);
+console.log(sentence0);
 
 
 /*c. Crear dos variables de tipo String y sumar el largo de cada variable (cantidad de letras del string)
@@ -27,8 +27,8 @@ guardando el resultado de la suma en una 3er variable (utilizar length)*/
 
 console.log('-Exercise 1.c:');
 
-var water = 'pulpo';
-var earth = 'ornitorrinco';
-var animals = mar + tierra;
+var water = 'octopus';
+var earth = 'platypus';
+var animals = water + earth;
 
-console.log(animales.length);
+console.log(animals.length);

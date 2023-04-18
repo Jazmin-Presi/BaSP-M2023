@@ -22,7 +22,7 @@ function addition2(a,b){
     if (typeof(a) && typeof(b) == 'number'){
         return a+b;
     }else{
-        alert('Uno de los parametros tiene un error');
+        alert('One of the parameters is not a number');
         return NaN;
     }
  }
@@ -46,9 +46,9 @@ function validateInteger(a){
 
 var result3 = validateInteger(8);
 
-console.log('entero =', result3);
+console.log('integer =', result3);
 result3 = validateInteger(8.4);
-console.log('no entero =', result3);
+console.log('decimal =', result3);
 
 
 /*d. Copiar y renombrar la función suma del ejercicio 6b) y agregarle una llamada a la función del ejercicio 6c.
@@ -60,27 +60,22 @@ console.log('-Exercise 6.d:');
 function addition3(a,b){
     if (typeof(a) && typeof(b) == 'number'){
         if (!(validateInteger(a))){
-            alert('Error, el numero no es entero');
+            alert('The number is not integer');
             a = Math.round(a);
         }
         if (!(validateInteger(b))){
-            alert('Error, el numero no es entero');
+            alert('The number is not integer');
             b = Math.round(b);
         }
         return a+b;
     }else{
-        alert('Uno de los parametros tiene un error');
+        alert('One of the parameters is not a number');
         return NaN;
     }
  }
 
  var result4 = addition3(1,0.8);
  console.log(result4);
- var result4 = addition3(1.3,1.8);
- console.log(result4);
- var result4 = addition3(1.6,8);
- console.log(result4);
-
 
 /*e. Convertir la validación del ejercicio 6d) en una función separada y llamarla dentro de una nueva
 función probando que todo siga funcionando igual que en el apartado anterior*/
@@ -89,7 +84,7 @@ console.log('-Exercise 6.e:');
 
 function validate1(a){
     if (!(validateInteger(a))){
-        alert('Error, el numero no es entero');
+        alert('The number is not integer');
         a=Math.round(a);
     }
     return a;
@@ -99,21 +94,16 @@ function validate2(a,b){
     return (typeof(a) && typeof(b) == 'number');
  }
 
-
  function addition4(a,b){
     if (validate2(a,b)){
         a = validate1(a);
         b = validate1(b);
         return a+b;
     }else{
-        alert('Uno de los parametros tiene un error');
+        alert('One of the parameters is not a number');
         return NaN;
     }
  }
 
- var result5 = addition4(0.6,5.3);
- console.log(result5);
- var result5 = addition4(0,5);
- console.log(result5);
- var result5 = addition4('8','5');
+ var result5 = addition4(0.6,'5');
  console.log(result5);

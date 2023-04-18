@@ -36,6 +36,8 @@ Github pages was enabled to visualize the online preview.
 ```bash
 https://keiler-art.github.io/BaSP-M2023/week-04/
 ```
+## Week 05
+During this week we made use of the content we learned about javascript. We solved various exercises starting with basic theory about variables and operators. The exercises had an increasing difficulty up to more complex content such as functions.
 
 ## Author
 

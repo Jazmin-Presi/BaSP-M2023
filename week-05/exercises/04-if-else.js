@@ -27,7 +27,7 @@ vii “Anciano” si es mayor a 75 años*/
 
 console.log('-Exercise 4.b:');
 
-var age = Math.random(0,100)
+var age = Math.random() * 100
 
 console.log(age)
 

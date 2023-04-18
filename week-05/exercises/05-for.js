@@ -6,7 +6,7 @@ de JavaScript para mostrar una alerta utilizando cada una de las palabras*/
 console.log('-Exercise 5.a:');
 
 
-var animals = ['koala', 'pingüino', 'cucaracha', 'pato', 'llama']
+var animals = ['koala', 'penguin', 'roach', 'duck', 'llama']
 
 for (var index = 0; index < animals.length; index++) {
     alert(animals[index]);
@@ -33,7 +33,7 @@ var sentence = [];
 for (var index = 0; index < animals.length; index++){
     sentence.push(animals[index]);
 }
-console.log(sentence);
+alert(sentence);
 
 /*d. Crear un array vacío y con un bucle for de 10 repeticiones. Llenar el array con el número de la
 repetición, es decir que al final de la ejecución del bucle for debería haber 10 elementos
