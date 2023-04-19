@@ -28,11 +28,12 @@ Al final mostrar una única alerta con la cadena completa.*/
 
 console.log('-Exercise 5.c:');
 
-var sentence = [];
+var sentence = '';
 
 for (var index = 0; index < animals.length; index++){
-    sentence.push(animals[index]);
+    sentence = sentence+animals[index];
 }
+
 alert(sentence);
 
 /*d. Crear un array vacío y con un bucle for de 10 repeticiones. Llenar el array con el número de la

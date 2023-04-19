@@ -1,5 +1,7 @@
 main{
+    position: relative;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
 }
 section{
@@ -10,9 +12,7 @@ section{
 }
 aside{
     display: none;
-    position: fixed;
-    top: 76px;
-    width: 22%;
+    width: 100vw;
     height: 100%;
     background-color: #373867;
     text-align: center;
@@ -45,7 +45,8 @@ nav{
 #philosophy-img{
     width: 100%;
     min-width: 390px;
-    height: 245px;
+    min-height: 245px;
+    height: 25vw;
     background-image: url(../../assets/img/blue-gym-banner.png);
     background-position: center top;
     background-size: cover;
@@ -161,6 +162,7 @@ nav{
     margin-bottom: 50px;
 }
 article{
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -184,6 +186,8 @@ article img{
     color: #AACE9B;
 }
 .membership-info{
+    position: absolute;
+    bottom: 100px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -333,16 +337,20 @@ textarea{
     height: 27px;
     background-color: #AACE9B;
 }
-.w{
-    display: inline-block;
-    width: 100%;
-}
-.ww{
-    width: 100%;
-}
 @media screen and (min-width:600px){
     .burguer{
         display: none;
+    }
+    aside{
+        display: block;
+        position: fixed;
+        top: 76px;
+        width: 22vw;
+    }
+    .placeholder{
+        display: flex;
+        flex-direction: column;
+        margin-left: 22vw;
     }
     #why-mega-section{
     display: flex;
@@ -372,23 +380,11 @@ textarea{
         display: inline-block;
     }
     .activities-section{
-        display: flex;
-        flex-wrap: wrap;
         justify-content: center;
-        margin-left: 3%;
     }
     .activities{
         width: 410px;
         height: 420px;
-    }
-    aside{
-        display: block;
-    }
-    .placeholder{
-        display: flex;
-        flex-direction: column;
-        width: 78%;
-        margin-left: 22%;
     }
     .membership-article{
         display: flex;
