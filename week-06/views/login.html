@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" type="text/css" href="../css/common.css">
     <link rel="stylesheet" type="text/css" href="../css/login.css">
+    <script src="../js/login.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -14,10 +15,11 @@
         <h1>Log-in</h1>
         <form>
             <div class="div-form">
-                <label for="option1">Email</label>
-                <input type="text" placeholder="example@example.com">
-                <label for="option1">Password</label>
-                <input type="password" placeholder="Password">
+                <label for="email">Email</label>
+                <input id="email" type="text" name="email" placeholder="example@example.com">
+                <label for="password">Password</label>
+                <input id="password" type="password" placeholder="Password">
+                <p class="error-text">*Invalid email or password</p>
                 <div class="div-remember">
                     <input id="option1" type="radio" name="remember">
                     <label for="option1">Remember me</label>
