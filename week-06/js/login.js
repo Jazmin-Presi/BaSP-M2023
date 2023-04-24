@@ -6,24 +6,26 @@ var email = document.querySelector('input[name="email"]')
 
 var password = document.querySelector('input[name="password"]');
 
-var errorText = document.getElementsByClassName('error-text');
+var errorPassword = document.getElementById('error-password');
 
-var success = document.getElementsByClassName('form-success');
+var errorEmail = document.getElementById('error-email');
 
-var error = document.getElementsByClassName('form-error');
+var formError = document.getElementById('form-error');
+
+var formSuccess = document.getElementById('form-success');
 
 var submit = document.querySelector('input[type="submit"]');
 
 submit.addEventListener('click', function(e){
     e.preventDefault();
     if(passwordValidation(password.value) && emailValidation(email.value)){
-        success[0].classList.remove('none');
-        error[0].classList.add('none');
+        formSuccess.classList.remove('none');
+        formError.classList.add('none');
         alert('Email:' + email.value + '\nPassword:' + password.value);
     } else{
-        error[0].classList.remove('none');
-        success[0].classList.add('none');
-        alert('Error: Invalid email or password');
+        formError.classList.remove('none');
+        formSuccess.classList.add('none');
+        alert('Error: Invalid email or password!');
     }
 })
 
@@ -37,13 +39,13 @@ function emailValidation(email){
 email.addEventListener('focus', function(){
     email.classList.remove('red-border');
     email.classList.add('green-border');
-    errorText[0].classList.add('none');
+    errorEmail.classList.add('none');
 })
 email.addEventListener('blur', function(e){
     if (!emailValidation(e.target.value)){
         email.classList.add('red-border');
         email.classList.remove('green-border');
-        errorText[0].classList.remove('none');
+        errorEmail.classList.remove('none');
     }
 })
 
@@ -79,14 +81,14 @@ password.addEventListener('blur', function(e){
     if (!passwordValidation(e.target.value)){
         password.classList.add('red-border')
         password.classList.remove('green-border');
-        errorText[1].classList.remove('none');
+        errorPassword.classList.remove('none');
     }
 })
 
 password.addEventListener('focus', function(){
     password.classList.add('green-border');
     password.classList.remove('red-border');
-    errorText[1].classList.add('none');
+    errorPassword.classList.add('none');
 })
 
 }

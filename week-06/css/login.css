@@ -70,7 +70,8 @@ a{
 .none{
     display: none;
 }
-.error-text{
+#error-email,
+#error-password{
     border: hidden;
     border-radius: 30px;
     background: rgba(255, 73, 73, 0.4);
@@ -78,7 +79,7 @@ a{
     color: red;
     padding: 5px 15px;
 }
-.form-error{
+#form-error{
     margin-top: 10px;
     background: rgba(255, 73, 73, 0.7);
     border-radius: 3px;
@@ -87,7 +88,7 @@ a{
     font-weight: bold;
     color: black;
 }
-.form-success{
+#form-success{
     margin-top: 10px;
     color:  rgb(1, 190, 77);
     font-weight: bold;
