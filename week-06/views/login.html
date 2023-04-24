@@ -13,19 +13,22 @@
 <body>
     <main>
         <h1>Log-in</h1>
-        <form>
+        <form id="form">
             <div class="div-form">
-                <label for="email">Email</label>
+                <label class="form-label" for="email">Email</label>
                 <input id="email" type="text" name="email" placeholder="example@example.com">
-                <label for="password">Password</label>
-                <input id="password" type="password" placeholder="Password">
-                <p class="error-text">*Invalid email or password</p>
+                <p class="error-text none">Invalid email format</p>
+                <label class="form-label" for="password">Password</label>
+                <input id="password" type="password" name="password" placeholder="Password">
+                <p class="error-text none">Invalid password</p>
                 <div class="div-remember">
                     <input id="option1" type="radio" name="remember">
                     <label for="option1">Remember me</label>
                 </div>
                 <a href="#">Forgot your password?</a>
                 <input class="button-form" type="submit" value="Login">
+                <p class="form-error none">*All fields must be complete</p>
+                <p class="form-success none">You have successfully logged in!</p>
             </div>
         </form>
     </main>
