@@ -1,19 +1,12 @@
 window.onload = function(){
 
 var emailExpression = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;
-
 var email = document.querySelector('input[name="email"]')
-
 var password = document.querySelector('input[name="password"]');
-
 var errorPassword = document.getElementById('error-password');
-
 var errorEmail = document.getElementById('error-email');
-
 var formError = document.getElementById('form-error');
-
 var formSuccess = document.getElementById('form-success');
-
 var submit = document.querySelector('input[type="submit"]');
 
 submit.addEventListener('click', function(e){

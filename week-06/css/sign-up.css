@@ -1,0 +1,94 @@
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+form h1{
+    font-weight: 500;
+    font-size: 1.25em;
+    line-height: 23px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    min-width: 300px;
+    height: 100%;
+    background-color: #FBFBFB;
+    text-align: center;
+}
+.div-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+    height: 65%;
+    min-width: 260px;
+}
+.div-fields{
+
+}
+label,
+a,
+.div-remember{
+    align-self: flex-start;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 9px;
+}
+input[type="text"],
+input[type="password"],
+input[type="input"]{
+    align-content: center;
+    padding: 5px;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.button-form{
+    border: solid;
+    border-radius: 5px;
+    border-width: 1px;
+    margin-top: 20px;
+    width: 35%;
+    height: 33px;
+    background-color: #FBFBFB;
+}
+.red-border{
+    border-color: red;
+    border-style: solid;
+}
+.green-border{
+    border-color: rgb(1, 190, 77);
+    border-style: solid;
+}
+.none{
+    display: none;
+}
+form p{
+    border: hidden;
+    border-radius: 30px;
+    background: rgba(255, 73, 73, 0.4);
+    font-size: 12px;
+    color: red;
+    padding: 5px 15px;
+}
+#form-error{
+    margin-top: 10px;
+    background: rgba(255, 73, 73, 0.7);
+    border-radius: 3px;
+    padding: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    color: black;
+}
+#form-success{
+    margin-top: 10px;
+    color:  rgb(1, 190, 77);
+    font-weight: bold;
+    font-size: 12px;
+}

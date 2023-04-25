@@ -4,15 +4,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" type="text/css" href="./css/common.css">
-    <link rel="stylesheet" type="text/css" href="./css/sign-up.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/sign-up.css">
     <script defer src="../js/sign-up.js"></script>
     <title>Document</title>
 </head>
 <body>
     <main>
-        
+        <form id="form">
+            <div class="div-form">
+                <div class="div-fields">
+                    <label class="form-label" for="email">Email</label>
+                    <input id="email" type="text" name="email" placeholder="example@example.com">
+                    <p id="error-email" class="none" >Invalid email format</p>
+                    <label class="form-label" for="password">Password</label>
+                    <input id="password" type="password" name="password" placeholder="Password">
+                    <p id="error-password" class="none">Invalid password</p>
+                </div>
+                <div class="div-fields">
+                    <label class="form-label" for="re-password">Repeat Password</label>
+                    <input id="re-password" type="text" name="re-password" placeholder="Password2">
+                    <p id="error-re-password" class="none" >Password must be the same</p>
+                    <label class="form-label" for="name">Name</label>
+                    <input id="name" type="text" name="name" placeholder="Homero">
+                    <p id="error-name" class="none" >Invalid name</p>
+                </div>
+                <div class="div-fields">
+                    <label class="form-label" for="surname">Surname</label>
+                    <input id="surname" type="text" name="surname" placeholder="Thompson">
+                    <p id="error-surname" class="none" >Invalid surname</p>
+                    <label class="form-label" for="dni">DNI</label>
+                    <input id="dni" type="text" name="dni" placeholder="30200300">
+                    <p id="error-dni" class="none" >Invalid DNI</p>
+                </div>
+                <div class="div-fields">
+                    <label class="form-label" for="birth-date">Birth Date</label>
+                    <input id="birth-date" type="date" name="birth-date" placeholder="01-01-1999">
+                    <p id="error-birth-date" class="none" >Invalid Birth Date</p>
+                    <label class="form-label" for="phone-number">Phone Number</label>
+                    <input id="phone-number" type="text" name="phone-number" placeholder="123456789">
+                    <p id="error-phone-number" class="none" >Invalid Phone Number</p>
+                </div>
+                <div class="div-fields">
+                    <label class="form-label" for="address">Address</label>
+                    <input id="address" type="text" name="address" placeholder="Fake Street 123">
+                    <p id="error-address" class="none" >Invalid Address</p>
+                    <label class="form-label" for="city">City</label>
+                    <input id="city" type="text" name="city" placeholder="Springfield">
+                    <p id="error-city" class="none" >Invalid City</p>
+                </div>
+                <label class="form-label" for="postal-code">Postal Code</label>
+                <input id="postal-code" type="text" name="postal-code" placeholder="5000">
+                <p id="error-postal-code" class="none" >Invalid Postal Code</p>
+
+                <input class="button-form" type="submit" value="Register">
+
+                <p id="form-error" class="none">Oops, something went wrong</p>
+                <p id="form-success" class="none">You have successfully registered!</p>
+                <div class="div-terms">
+                    <input id="terms" type="radio" name="terms">
+                    <label for="terms">Terms & Conditions</label>
+                </div>
+            </div>
     </main>
 </body>
 </html>
