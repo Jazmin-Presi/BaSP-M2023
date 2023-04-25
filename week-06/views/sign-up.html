@@ -20,7 +20,9 @@
                     <p id="error-email" class="none" >Invalid email format</p>
                     <label class="form-label" for="password">Password</label>
                     <input id="password" type="password" name="password" placeholder="Password">
-                    <p id="error-password" class="none">Invalid password</p>
+                    <p id="error-password" class="none">
+                        The password must be at least 8 characters including letters and numbers
+                    </p>
                 </div>
                 <div class="div-fields">
                     <label class="form-label" for="re-password">Repeat Password</label>
@@ -28,15 +30,17 @@
                     <p id="error-re-password" class="none" >Password must be the same</p>
                     <label class="form-label" for="name">Name</label>
                     <input id="name" type="text" name="name" placeholder="Homero">
-                    <p id="error-name" class="none" >Invalid name</p>
+                    <p id="error-name" class="none" >The Name field must contain only alphabets</p>
                 </div>
                 <div class="div-fields">
                     <label class="form-label" for="surname">Surname</label>
                     <input id="surname" type="text" name="surname" placeholder="Thompson">
-                    <p id="error-surname" class="none" >Invalid surname</p>
+                    <p id="error-surname" class="none" >The Surname field must contain only alphabets</p>
                     <label class="form-label" for="dni">DNI</label>
                     <input id="dni" type="text" name="dni" placeholder="30200300">
-                    <p id="error-dni" class="none" >Invalid DNI</p>
+                    <p id="error-dni" class="none" >
+                        The DNI must contain at least 8 numbers
+                    </p>
                 </div>
                 <div class="div-fields">
                     <label class="form-label" for="birth-date">Birth Date</label>
@@ -44,23 +48,30 @@
                     <p id="error-birth-date" class="none" >Invalid Birth Date</p>
                     <label class="form-label" for="phone-number">Phone Number</label>
                     <input id="phone-number" type="text" name="phone-number" placeholder="123456789">
-                    <p id="error-phone-number" class="none" >Invalid Phone Number</p>
+                    <p id="error-phone-number" class="none" >
+                        The Phone Number must only contain 10 numbers
+                    </p>
                 </div>
                 <div class="div-fields">
                     <label class="form-label" for="address">Address</label>
                     <input id="address" type="text" name="address" placeholder="Fake Street 123">
-                    <p id="error-address" class="none" >Invalid Address</p>
+                    <p id="error-address" class="none" >
+                        The Address field must only contain alphabets, numbers and space
+                    </p>
                     <label class="form-label" for="city">City</label>
                     <input id="city" type="text" name="city" placeholder="Springfield">
-                    <p id="error-city" class="none" >Invalid City</p>
+                    <p id="error-city" class="none" >
+                        The city field must only contain alphabets and numbers
+                    </p>
                 </div>
                 <label class="form-label" for="postal-code">Postal Code</label>
                 <input id="postal-code" type="text" name="postal-code" placeholder="5000">
-                <p id="error-postal-code" class="none" >Invalid Postal Code</p>
+                <p id="error-postal-code" class="none" >
+                    The Postal Code must be at least 4 numbers</p>
 
                 <input class="button-form" type="submit" value="Register">
 
-                <p id="form-error" class="none">Oops, something went wrong</p>
+                <p id="form-error" class="none">*All fields must be complete</p>
                 <p id="form-success" class="none">You have successfully registered!</p>
                 <div class="div-terms">
                     <input id="terms" type="radio" name="terms">

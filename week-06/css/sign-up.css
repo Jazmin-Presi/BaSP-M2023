@@ -87,6 +87,7 @@ form p{
     color: black;
 }
 #form-success{
+    background: none;
     margin-top: 10px;
     color:  rgb(1, 190, 77);
     font-weight: bold;
