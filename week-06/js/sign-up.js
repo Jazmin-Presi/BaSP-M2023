@@ -44,16 +44,16 @@ dateValidation(birthDate.value)){
     formSuccess.classList.remove('none');
     formError.classList.add('none');
     dinDan.classList.remove('none');
-    alert('Email:' + email.value +
-        '\nPassword:' + password.value +
-        '\nRepeat Password:' + rePassword.value +
-        '\nName:' + name.value +
-        '\nSurname:' + surname.value +
-        '\nDNI:' + dni.value +
-        '\nPhone Number:' + phoneNumber.value +
-        '\nPostal Code:' + postalCode.value +
-        '\nCity:' + city.value +
-        '\nAddress:' + address.value +
+    alert('Email: ' + email.value +
+        '\nPassword: ' + password.value +
+        '\nRepeat Password: ' + rePassword.value +
+        '\nName: ' + name.value +
+        '\nSurname: ' + surname.value +
+        '\nDNI: ' + dni.value +
+        '\nPhone Number: ' + phoneNumber.value +
+        '\nPostal Code: ' + postalCode.value +
+        '\nCity: ' + city.value +
+        '\nAddress: ' + address.value +
         '\nBirth Date: ' + birthDate.value);
     } else{
         formError.classList.remove('none');
@@ -79,7 +79,7 @@ function fieldsValidation(e, pw, pw2, n, s, dni, p, z, c, a, d){
         array.push('Invalid Name: ' + n);
     }
     if(!nameValidation(s)){
-        array.push('\nInvalid Last name: ' + s);
+        array.push('\nInvalid Surname: ' + s);
     }
     if(!dniValidation(dni)){
         array.push('\nInvalid DNI: ' + dni);

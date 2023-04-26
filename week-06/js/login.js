@@ -1,5 +1,6 @@
 window.onload = function(){
 
+var fine = document.getElementById('fine');
 var dinDan = document.getElementById('din-dan');
 var emailExpression = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;
 var email = document.querySelector('input[name="email"]')
@@ -16,11 +17,13 @@ submit.addEventListener('click', function(e){
         formSuccess.classList.remove('none');
         formError.classList.add('none');
         dinDan.classList.remove('none');
+        fine.classList.add('none');
         alert('Email:' + email.value + '\nPassword:' + password.value);
     } else{
         formError.classList.remove('none');
         formSuccess.classList.add('none');
         dinDan.classList.add('none');
+        fine.classList.remove('none');
         alert(fieldsValidation(email.value, password.value))
     }
 })
