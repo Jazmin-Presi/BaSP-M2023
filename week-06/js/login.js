@@ -1,5 +1,6 @@
 window.onload = function(){
 
+var dinDan = document.getElementById('din-dan');
 var emailExpression = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;
 var email = document.querySelector('input[name="email"]')
 var password = document.querySelector('input[name="password"]');
@@ -14,10 +15,12 @@ submit.addEventListener('click', function(e){
     if(passwordValidation(password.value) && emailValidation(email.value)){
         formSuccess.classList.remove('none');
         formError.classList.add('none');
+        dinDan.classList.remove('none');
         alert('Email:' + email.value + '\nPassword:' + password.value);
     } else{
         formError.classList.remove('none');
         formSuccess.classList.add('none');
+        dinDan.classList.add('none');
         alert(fieldsValidation(email.value, password.value))
     }
 })

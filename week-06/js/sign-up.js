@@ -1,5 +1,6 @@
 window.onload = function(){
 
+var dinDan = document.getElementById('din-dan');
 var submit = document.querySelector('input[type="submit"]');
 var emailExpression = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;
 var email = document.querySelector('input[name="email"]')
@@ -42,6 +43,7 @@ addressValidation(address.value) &&
 dateValidation(birthDate.value)){
     formSuccess.classList.remove('none');
     formError.classList.add('none');
+    dinDan.classList.remove('none');
     alert('Email:' + email.value +
         '\nPassword:' + password.value +
         '\nRepeat Password:' + rePassword.value +
@@ -56,6 +58,7 @@ dateValidation(birthDate.value)){
     } else{
         formError.classList.remove('none');
         formSuccess.classList.add('none');
+        dinDan.classList.add('none');
         alert(fieldsValidation(email.value, password.value, rePassword.value, name.value, surname.value,
              dni.value, phoneNumber.value, postalCode.value, city.value, address.value, birthDate.value))
     }

@@ -39,17 +39,12 @@ https://keiler-art.github.io/BaSP-M2023/week-04
 ## Week 05
 During this week we made use of the content we learned about javascript. We solved various exercises starting with basic theory about variables and operators. The exercises had an increasing difficulty up to more complex content such as functions.
 
-## Github Pages
-```bash
-https://keiler-art.github.io/BaSP-M2023/week-05
-```
-
 ## Week 06
 This week we applied the knowledge gained during the previous assignment about javascript. We designed the layout for both a log-in and a sign-up form based on the aesthetic used on Figma. Then we developed the javascript logic, including the corresponding validations for each field in the form.
 
 ## Github Pages
 ```bash
-https://keiler-art.github.io/BaSP-M2023/week-06
+https://keiler-art.github.io/BaSP-M2023/week-06/views/index.html
 ```
 
 ## Author
