@@ -28,12 +28,24 @@ window.onload = function(){
     var formError = document.getElementById('form-error');
     var formSuccess = document.getElementById('form-success');
 
+    name.value=localStorage.getItem('name');
+    surname.value=localStorage.getItem('lastName');
+    dni.value=localStorage.getItem('dni');
+    birthDate.value=localStorage.getItem('dob');
+    phoneNumber.value=localStorage.getItem('phone');
+    address.value=localStorage.getItem('address');
+    city.value=localStorage.getItem('city');
+    postalCode.value=localStorage.getItem('zip');
+    email.value=localStorage.getItem('email');
+    password.value=localStorage.getItem('password');
+    rePassword.value=localStorage.getItem('confirmPassword');
+
     submit.addEventListener('click', function(e){
         var url = 'https://api-rest-server.vercel.app/signup?' +
         'name=' + name.value +
         '&lastName=' + surname.value +
         '&dni=' + dni.value +
-        '&dob=' + birthDate.value +
+        '&dob=' + correctDate(birthDate.value) +
         '&phone=' + phoneNumber.value +
         '&address=' + address.value +
         '&city=' + city.value +
@@ -57,23 +69,34 @@ window.onload = function(){
             formError.classList.add('none');
             dinDan.classList.remove('none');
             fetch(url)
-                .then(function(response){
-                    return response.json();
-                })
-                .then(function(response){
-                    if(!response.success){throw new Error(JSON.stringify(response))}
-                    alert(JSON.stringify(response));
-                    alert('Email: ' + email.value +
-                        '\nPassword: ' + password.value +
-                        '\nRepeat Password: ' + rePassword.value +
-                        '\nName: ' + name.value +
-                        '\nSurname: ' + surname.value +
-                        '\nDNI: ' + dni.value +
-                        '\nPhone Number: ' + phoneNumber.value +
-                        '\nPostal Code: ' + postalCode.value +
-                        '\nCity: ' + city.value +
-                        '\nAddress: ' + address.value +
-                        '\nBirth Date: ' + birthDate.value);
+            .then(function(response){
+                return response.json();
+            })
+            .then(function(response){
+                if(!response.success){throw new Error(JSON.stringify(response))}
+                alert(JSON.stringify(response));
+                alert('Email: ' + email.value +
+                    '\nPassword: ' + password.value +
+                    '\nRepeat Password: ' + rePassword.value +
+                    '\nName: ' + name.value +
+                    '\nSurname: ' + surname.value +
+                    '\nDNI: ' + dni.value +
+                    '\nPhone Number: ' + phoneNumber.value +
+                    '\nPostal Code: ' + postalCode.value +
+                    '\nCity: ' + city.value +
+                    '\nAddress: ' + address.value +
+                    '\nBirth Date: ' + birthDate.value);
+                    localStorage.setItem('name', name.value);
+                    localStorage.setItem('lastName', surname.value);
+                    localStorage.setItem('dni', dni.value);
+                    localStorage.setItem('dob', birthDate.value);
+                    localStorage.setItem('phone', phoneNumber.value);
+                    localStorage.setItem('address', address.value);
+                    localStorage.setItem('city', city.value);
+                    localStorage.setItem('zip', postalCode.value);
+                    localStorage.setItem('email', email.value);
+                    localStorage.setItem('password', password.value);
+                    localStorage.setItem('confirmPassword', password.value);
                 })
                 .catch(function(error){
                     alert(error);
@@ -270,6 +293,12 @@ window.onload = function(){
         return true;
         }
         return false;
+    }
+
+    function correctDate(date){
+        var mdy = date.split('-');
+        newmdy = mdy[1] + '/' + mdy[2] + '/' + mdy[0];
+        return newmdy;
     }
 
     email.addEventListener('blur', function(e){
