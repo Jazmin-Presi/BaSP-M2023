@@ -1,0 +1,422 @@
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+aside{
+    display: flex;
+    width: 100%;
+    background-color: #373867;
+    text-align: center;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+    gap: 5px;
+    width: 100%;
+}
+#nav-text li:nth-child(1),
+#nav-text li:nth-child(2),
+#nav-text li:nth-child(3),
+#nav-text li:nth-child(4){
+    margin-top: 50px;
+    font-weight: 800;
+    font-size: 1.25em;
+    line-height: 27px;
+}
+#nav-text li:nth-child(4){
+    margin-top: 127px;
+    margin-bottom: 8px;
+}
+#nav-text li:nth-child(5),
+#nav-text li:nth-child(6),
+#nav-text li:nth-child(7),
+#nav-text li:nth-child(8),
+#nav-text li:nth-child(9){
+    font-weight: 400;
+    font-size: 1.25em;
+    line-height: 30px;
+}
+.placeholder{
+    width: 100%
+}
+#philosophy-img{
+    width: 100%;
+    min-width: 300px;
+    min-height: 245px;
+    height: 25vw;
+    background-image: url(../../assets/img/blue-gym-banner.png);
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+#philosophy-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+#philosophy-text h2{
+    font-weight: 700;
+    font-size: 3vw;
+    line-height: 1vw;
+}
+#philosophy-text p{
+    display: inline-block;
+    padding-top: 20px;
+    width: 60%;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1em;
+}
+#why-mega{
+    display: inline-block;
+    margin-top: 30px;
+    font-weight: 700;
+    font-size: 1.3em;
+    line-height: 18px;
+    text-align: center;
+}
+#why-mega h2{
+    margin-bottom: 20px;
+}
+#why-mega img{
+    display: none;
+    width: 44px;
+    height: 50px;
+}
+#why-mega p{
+    margin: auto;
+    width: 80%;
+}
+#people-exercising{
+    display: none;
+    width: 30%;
+}
+.join-act-title{
+    display: inline-block;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    padding: 15px 57px;
+    background-color: #373867;
+    font-weight: 700;
+    font-size: 1.25em;
+    line-height: 23px;
+}
+.blue-box{
+    display: flex;
+    align-self: flex-start;
+}
+.activities{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 270px;
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-weight: 400;
+    font-size: 1.5em;
+    line-height: 23px;
+    text-align: center;
+}
+.activities p{
+    margin-top: 8%;
+}
+#crossfit{
+    background-image: url(../../assets/img/crossfit.png);
+}
+#spinning{
+    background-image: url(../../assets/img/spinning.png);
+}
+#functional{
+    background-image: url(../../assets/img/funcional.png);
+}
+#boxing{
+    background-image: url(../../assets/img/boxi.png);
+}
+#weight-training{
+    background-image: url(../../assets/img/musculacion.png);
+}
+.mega-memb-title{
+    display: inline-block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 15px 24px;
+    background-color: #373867;
+    font-weight: 700;
+    font-size: 1.25em;
+    line-height: 23px;
+}
+#membership-section{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+article{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    min-width: 280px;
+    height: 710px;
+    padding-bottom: 40px;
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+article img{
+    width: 93%;
+    height: 35%;
+}
+.gray-margin{
+    width: 100%;
+    height: 40px;
+    background-color: #AFAFC2;
+}
+.green-title{
+    color: #AACE9B;
+}
+.membership-info{
+    position: absolute;
+    bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 417px;
+    width: 260px;
+    margin: auto;
+    text-align: center;
+    background-color: #fff;
+}
+.membership-info h3,
+.membership-info button{
+    font-weight: 700;
+    font-size: 1.8em;
+    line-height: 36px;
+}
+.membership-info li{
+    margin: 17px 0px;
+    text-align: left;
+    font-weight: 400;
+    font-size: 0.75em;
+}
+.line{
+    height: 1px;
+    width: 100%;
+    background-color: #AFAFC2;
+}
+.membership-info p{
+    margin: 20px 0px;
+    max-width: 250px;
+    font-weight: 400;
+    font-size: 0.75em;
+    line-height: 13px;
+}
+.membership-info button{
+    background-color: #49A37B;
+    border: none;
+    width: 260px;
+    height: 72px;
+}
+.function{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 50px;
+}
+.function-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.function img{
+    margin-top: 30px;
+    width: 30%;
+    height: 30%;
+    min-width: 140px;
+    object-fit: contain;
+}
+.test-text{
+    width: 70%;
+    min-width: 350px;
+}
+.function h2,
+.function h3,
+.function p{
+    margin-left: 73px;
+}
+.function h3,
+.function p{
+    padding-top: 10px;
+    font-weight: 400;
+    font-size: 1.25em;
+    line-height: 23px;
+}
+.function h2{
+    margin-top: 10%;
+    font-weight: 700;
+    font-size: 3.25em;
+    line-height: 62px;
+}
+.reservation{
+    background-color: #AACE9B;
+}
+.membership{
+    background-color: #373867;
+}
+.schedule{
+    background-color: #fff;
+}
+.contact{
+    background-color: #919194;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 80%;
+    height: 532px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 20px;
+}
+.form-labels-full-group{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.form-labels-first-group{
+    display: flex;
+    flex-direction: column;
+}
+.bordered{
+    display: inline-block;
+    max-width: 280px;
+    margin: 10px;
+    padding: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: #373867;
+}
+label{
+    font-weight: 500;
+    font-size: 0.5em;
+    line-height: 9px;
+}
+input[type="text"]{
+    margin: 8px;
+    padding: 10px;
+    width: 100px;
+}
+input[type="email"]{
+    padding: 10px;
+    width: 80%;
+    max-width: 350px;
+}
+form h2{
+    font-weight: 500;
+    font-size: 1.25em;
+    line-height: 23px;
+}
+textarea{
+    width: 80%;
+    height: 40px;
+    margin: 0 auto;
+    max-width: 350px;
+}
+.button-form{
+    border: none;
+    border-radius: 5px;
+    width: 83px;
+    height: 27px;
+    background-color: #AACE9B;
+}
+@media screen and (min-width:600px){
+    #why-mega-section{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    }
+    #people-exercising{
+        display: inline-block;
+    }
+    .form-labels-first-group{
+        display: flex;
+        flex-direction: row;
+    }
+    #why-mega{
+        width: 60%;
+    }
+    .activities-section{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 3%;
+    }
+}
+@media screen and (min-width:1024px){
+    main{
+        flex-direction: row;
+    }
+    aside{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        width: 20%;
+    }
+    nav{
+        position: fixed;
+        width: 20%;
+        top: 80px;
+    }
+    .placeholder{
+        width: 80%;
+    }
+    #why-mega img{
+        display: inline-block;
+    }
+    #why-mega h2{
+        display: inline-block;
+    }
+    .activities-section{
+        justify-content: center;
+    }
+    .activities{
+        width: 30vw;
+        height: 30vw;
+        min-width: 410px;
+        min-height: 410px;
+    }
+    .membership-article{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    article{
+        width: 20%;
+    }
+}

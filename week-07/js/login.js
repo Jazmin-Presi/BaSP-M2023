@@ -11,14 +11,28 @@ window.onload = function(){
     var formSuccess = document.getElementById('form-success');
     var submit = document.querySelector('input[type="submit"]');
 
+
     submit.addEventListener('click', function(e){
+        var url = `https://api-rest-server.vercel.app/login?email=${email.value}&password=${password.value}`;
         e.preventDefault();
         if(passwordValidation(password.value) && emailValidation(email.value)){
             formSuccess.classList.remove('none');
             formError.classList.add('none');
             dinDan.classList.remove('none');
             fine.classList.add('none');
-            alert('Email:' + email.value + '\nPassword:' + password.value);
+            console.log(email.value, password.value)
+            fetch(url)
+            .then(function(response){
+                return response.json();
+            })
+            .then(function(response){
+                if(!response.success){throw new Error(JSON.stringify(response))}
+                alert(JSON.stringify(response));
+                alert('Email: ' + email.value + '\nPassword: ' + password.value);
+            })
+            .catch(function(error){
+                alert(error);
+            })
         } else{
             formError.classList.remove('none');
             formSuccess.classList.add('none');

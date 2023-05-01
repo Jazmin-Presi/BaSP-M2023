@@ -29,40 +29,63 @@ window.onload = function(){
     var formSuccess = document.getElementById('form-success');
 
     submit.addEventListener('click', function(e){
-    e.preventDefault();
-    if(emailValidation(email.value) &&
-    passwordValidation(password.value) &&
-    password2Validation(rePassword.value, password.value) &&
-    nameValidation(name.value) &&
-    nameValidation(surname.value) &&
-    dniValidation(dni.value) &&
-    phoneValidation(phoneNumber.value) &&
-    zipValidation(postalCode.value) &&
-    cityValidation(city.value) &&
-    addressValidation(address.value) &&
-    dateValidation(birthDate.value)){
-        formSuccess.classList.remove('none');
-        formError.classList.add('none');
-        dinDan.classList.remove('none');
-        alert('Email: ' + email.value +
-            '\nPassword: ' + password.value +
-            '\nRepeat Password: ' + rePassword.value +
-            '\nName: ' + name.value +
-            '\nSurname: ' + surname.value +
-            '\nDNI: ' + dni.value +
-            '\nPhone Number: ' + phoneNumber.value +
-            '\nPostal Code: ' + postalCode.value +
-            '\nCity: ' + city.value +
-            '\nAddress: ' + address.value +
-            '\nBirth Date: ' + birthDate.value);
-        } else{
-            formError.classList.remove('none');
-            formSuccess.classList.add('none');
-            dinDan.classList.add('none');
-            alert(fieldsValidation(email.value, password.value, rePassword.value, name.value, surname.value,
-                dni.value, phoneNumber.value, postalCode.value, city.value, address.value, birthDate.value))
-        }
-    })
+        var url = 'https://api-rest-server.vercel.app/signup?' +
+        'name=' + name.value +
+        '&lastName=' + surname.value +
+        '&dni=' + dni.value +
+        '&dob=' + birthDate.value +
+        '&phone=' + phoneNumber.value +
+        '&address=' + address.value +
+        '&city=' + city.value +
+        '&zip=' + postalCode.value +
+        '&email=' + email.value +
+        '&password=' + password.value;
+
+        e.preventDefault();
+        if(emailValidation(email.value) &&
+        passwordValidation(password.value) &&
+        password2Validation(rePassword.value, password.value) &&
+        nameValidation(name.value) &&
+        nameValidation(surname.value) &&
+        dniValidation(dni.value) &&
+        phoneValidation(phoneNumber.value) &&
+        zipValidation(postalCode.value) &&
+        cityValidation(city.value) &&
+        addressValidation(address.value) &&
+        dateValidation(birthDate.value)){
+            formSuccess.classList.remove('none');
+            formError.classList.add('none');
+            dinDan.classList.remove('none');
+            fetch(url)
+                .then(function(response){
+                    return response.json();
+                })
+                .then(function(response){
+                    if(!response.success){throw new Error(JSON.stringify(response))}
+                    alert(JSON.stringify(response));
+                    alert('Email: ' + email.value +
+                        '\nPassword: ' + password.value +
+                        '\nRepeat Password: ' + rePassword.value +
+                        '\nName: ' + name.value +
+                        '\nSurname: ' + surname.value +
+                        '\nDNI: ' + dni.value +
+                        '\nPhone Number: ' + phoneNumber.value +
+                        '\nPostal Code: ' + postalCode.value +
+                        '\nCity: ' + city.value +
+                        '\nAddress: ' + address.value +
+                        '\nBirth Date: ' + birthDate.value);
+                })
+                .catch(function(error){
+                    alert(error);
+                })
+            } else{
+                formError.classList.remove('none');
+                formSuccess.classList.add('none');
+                dinDan.classList.add('none');
+                alert(fieldsValidation(email.value, password.value, rePassword.value, name.value, surname.value,
+                    dni.value, phoneNumber.value, postalCode.value, city.value, address.value, birthDate.value))
+            }
+        })
 
     function fieldsValidation(e, pw, pw2, n, s, dni, p, z, c, a, d){
         var array = [];

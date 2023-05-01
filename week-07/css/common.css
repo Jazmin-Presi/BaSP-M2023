@@ -1,0 +1,23 @@
+body{
+    background-color: #ECE9F1;
+    font-family: 'Roboto', sans-serif;
+}
+.upp-title{
+    text-transform: uppercase;
+}
+.blue-text{
+    color: #373867;
+}
+.white-text{
+    color: #fff;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #fff
+}
+a:hover{
+    color: #AACE9B
+    }

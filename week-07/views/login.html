@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/header.css">
+    <link rel="stylesheet" type="text/css" href="../css/login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="../js/login.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header class="upp-title blue-text">
+        <div>
+            <a href="./index.html">
+                <img class="rocket-logo" src="../../assets/img/logo-rr.png" alt="mega rocket logo">
+            </a>
+        </div>
+    </header>
+    <main>
+        <h1 class="upp-title white-text">Log in</h1>
+        <form id="form">
+            <div class="div-form">
+                <label class="form-label" for="email">Email</label>
+                <input id="email" type="text" name="email" placeholder="example@example.com">
+                <p id="error-email" class="none" >Invalid email format</p>
+                <label class="form-label" for="password">Password</label>
+                <input id="password" type="password" name="password" placeholder="Password">
+                <p id="error-password" class="none">Invalid password</p>
+                <div class="div-remember">
+                    <input id="option1" type="radio" name="remember">
+                    <label for="option1">Remember me</label>
+                </div>
+                <input class="button-form" type="submit" value="Login">
+                <div>
+                    <a class="already" href="./sign-up.html">You don't have an account? SIGN UP!</a>
+                </div>
+                <p id="form-error" class="none">*All fields must be complete</p>
+                <p id="form-success" class="none">You have successfully logged in!</p>
+                <img id="din-dan" class="none" src="../../assets/img/din.gif" alt="dino dance">
+                <img id="fine" class="none" src="../../assets/img/fine.gif" alt="dino dance">
+            </div>
+        </form>
+    </main>
+</body>
+</html>
