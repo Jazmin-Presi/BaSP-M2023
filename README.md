@@ -47,6 +47,14 @@ This week we applied the knowledge gained during the previous assignment about j
 https://keiler-art.github.io/BaSP-M2023/week-06/views/index.html
 ```
 
+## Week 07
+For this week's problematic we continued working with the forms created during the previous assignment. We extended the functionality of the log-in and sign-up by enabling the transference of information to an online server. We achived this task by making an HTTP request with javascript. We also implemented LocalStorage to save the information of the sign-up.
+
+## Github Pages
+```bash
+https://keiler-art.github.io/BaSP-M2023/week-07/views/index.html
+```
+
 ## Author
 
 - [Jazmin Presidente](https://www.github.com/keiler-art)

@@ -1,5 +1,8 @@
 window.onload = function(){
 
+    var alertModal = document.querySelector('.alert');
+    var alertButton = document.querySelector('.alert-button');
+    var alertMsg = document.querySelector('.alert-msg');
     var fine = document.getElementById('fine');
     var dinDan = document.getElementById('din-dan');
     var emailExpression = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;
@@ -11,33 +14,38 @@ window.onload = function(){
     var formSuccess = document.getElementById('form-success');
     var submit = document.querySelector('input[type="submit"]');
 
+    alertButton.addEventListener('click', function(){
+        alertModal.classList.add('none');
+    })
+
 
     submit.addEventListener('click', function(e){
         var url = `https://api-rest-server.vercel.app/login?email=${email.value}&password=${password.value}`;
         e.preventDefault();
+        fetch(url)
+        .then(function(response){
+            return response.json();
+        })
+        .then(function(data){
+            if(!data.success){throw new Error(JSON.stringify(data))}
+            alertModal.classList.remove('none');
+            alertMsg.innerHTML = (JSON.stringify(data) +
+            'Email: ' + email.value + '\nPassword: ' + password.value);
+            dinDan.classList.remove('none');
+            fine.classList.add('none');
+        })
+        .catch(function(error){
+            alertModal.classList.remove('none');
+            alertMsg.innerHTML = error
+            fine.classList.remove('none');
+            dinDan.classList.add('none');
+        })
         if(passwordValidation(password.value) && emailValidation(email.value)){
             formSuccess.classList.remove('none');
             formError.classList.add('none');
-            dinDan.classList.remove('none');
-            fine.classList.add('none');
-            console.log(email.value, password.value)
-            fetch(url)
-            .then(function(response){
-                return response.json();
-            })
-            .then(function(response){
-                if(!response.success){throw new Error(JSON.stringify(response))}
-                alert(JSON.stringify(response));
-                alert('Email: ' + email.value + '\nPassword: ' + password.value);
-            })
-            .catch(function(error){
-                alert(error);
-            })
         } else{
             formError.classList.remove('none');
             formSuccess.classList.add('none');
-            dinDan.classList.add('none');
-            fine.classList.remove('none');
             alert(fieldsValidation(email.value, password.value))
         }
     })
